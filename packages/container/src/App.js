@@ -4,12 +4,9 @@ import { MarketingApp } from './components/MarketingApp'
 
 
 export default () => {
-
     return <div>
-        <h2>Hello Contaner</h2>
+        <h2>Hello Main Contaner</h2>
         <hr />
         <MarketingApp />
     </div>
-        
-    
 }
