@@ -7,17 +7,19 @@ import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
-})
+});
 
 export default () => {
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <BrowserRouter>
-        <div>
-          <Header />
-          <MarketingApp />
-        </div>
-      </BrowserRouter>
-    </StylesProvider>
+    <div>
+      <StylesProvider generateClassName={generateClassName}>
+        <BrowserRouter>
+          <div>
+            <Header />
+            <MarketingApp />
+          </div>
+        </BrowserRouter>
+      </StylesProvider>
+    </div>
   );
 };
